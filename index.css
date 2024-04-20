@@ -1,0 +1,324 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 170px;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.nav-item a {
+  display: flex;
+  text-decoration: none;
+  color: #272727;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  padding: 10px 10px;
+  font-family: Roboto;
+}
+
+.nav-item-ul {
+  gap: 50px;
+}
+
+.nav-action {
+  gap: 20px;
+}
+
+.nav-item-ul > li > a {
+  position: relative;
+}
+
+.nav-item-ul > li > a::before {
+  content: "";
+  height: 5px;
+  width: 0px;
+  background: #56b280;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin-bottom: -3px;
+  transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-item-ul > li:hover > a::before {
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 780px;
+  background-image: url(./assets/image/bg-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 55%;
+  padding: 50px;
+
+  border-radius: 2px;
+  background: rgba(247, 248, 250, 0.8);
+  backdrop-filter: blur(12px);
+}
+
+.hero-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.hero-card-text h1 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.hero-card-text p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.btn {
+  font-family: Roboto;
+  color: #fff;
+  display: inline-flex;
+  padding: 8px 44px;
+  border-radius: 4px;
+  background: #56b280;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+.product {
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 170px;
+}
+
+.product .heading {
+  color: #0b254b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.product .heading h1 {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.product .heading p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  flex: start;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.product-card {
+  width: calc(25% - 20px);
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 281px;
+  height: 210px;
+  object-fit: cover;
+  background-color: #fff;
+}
+.product-card-text {
+  padding: 10px 25px;
+  background-color: #fff;
+}
+.product-card-text h3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.product-card-text p {
+  color: #56b280;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.benefits {
+  font-family: Poppins;
+  display: flex;
+  gap: 20px;
+  background: #f7f8fa;
+  padding: 50px 170px;
+  color: #1d252c;
+}
+
+.benefits-desc {
+  width: 50%;
+  color: #000;
+}
+
+.benefits-desc h3 {
+  width: 50%;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 46.6px;
+  padding-bottom: 15px;
+}
+
+.benefits-desc p {
+  color: #56b280;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 35px;
+}
+
+.benefits-list-item {
+  padding-bottom: 20px;
+}
+.benefits-image {
+  width: 50%;
+  padding: 20px 30px;
+}
+
+.testimonials {
+  font-family: Poppins;
+  text-align: center;
+  font-style: normal;
+
+  color: #0b254b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  padding: 50px 170px;
+  background: rgba(86, 178, 128, 0.1);
+}
+
+.testimonials h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.testimonials p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.testimonials-list {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.testimonials-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 50px;
+  gap: 25px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-card img {
+  width: calc(100% / 3 - 20px);
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonials-card .rate-star-list {
+  color: #56b280;
+}
+
+.testimonials-card p {
+  color: #1d293f;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+.testimonials-card .name {
+  color: #7c8087;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.popular {
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 170px;
+  background: #fff;
+}
+
+.popular h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.popular p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
